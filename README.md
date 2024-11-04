@@ -41,21 +41,17 @@ The datase includes the following:
 
 ### Project Objectives
 The project was designed to address the following analysis goals: 
-  1. Total Sales by Product : To determine the total sales made by each product
-  2. Total Sales by Region : To determine the total sales made in each region
-  3. Region by Quantities Sold : To analyse the quantities of products sold in each 
-      region
-  4. Average Sales by Product : To calculate the average sales per region
+  1. Total Revenue by Region : To determine the total revenue made by each region
+  2. Total Revenue by Subscription Type : To determine the total revenue made according to the type of subscription
+  3. Total Revenue by Customer: To analyse the amount of subscription that was done by each customer
+  4. Total Revenue by Month : To calculate the total revenue that ws generated in each month
 
 ### Key Performance Indicator(KPI)
-    1. Total Sales : Sum of Total Sales grouped by region and product
-    2. Unit Sold : Sum of units sold, grouped by region and product 
-    3. Average Sales : Calculated as Total Sales / Total Unit sold for each region to 
-        measure the Sales efficiency
+    1. Total Revenue : Sum of Total Sales grouped by region and Subscription type
     
 ### Data Sources
 ---
-The primary data source of data used here is "sales_data.csv". This is an open source data that can be freely downloaded from an open source online such as kaggle or any other data repository site 
+The primary data source of data used here is "customer_data.csv". This is an open source data that can be freely downloaded from an open source online such as kaggle or any other data repository site 
 
 ### Tools Used 
 ---
@@ -94,22 +90,29 @@ EDA involved the exploring of data to answer some questions about the data such 
 This is where we we include some basic lines of code or queries or even some of the DAX expresions used during analysis;
 
 ``` SQL
-select product,
-sum(Revenue) as total_sales
-from [dbo].[salesdata]	
-group by Product
+Select region, count (CustomerID)
+as total_customers
+from [dbo].[CustomerData]
+group by region
 ```
 
 ### Results and Findings
 ---
 The analysis results are summarised as follows: 
 - Customer Data
-   1. 
+   1. It was noticed that the Basic was the highest subscription been done by the customer while standard was the least
+   2. The revenue generated for the year 2023 was very low compared to the revenue that was generated in the immediate year(2022)
 
 ### Data Visualizations
 ---
 Few extracted columns from the table i worked on and image from the document i worked on
 
+
+![image](https://github.com/user-attachments/assets/2ded62ea-400e-4297-906e-6873e24c4287)
+
+![image](https://github.com/user-attachments/assets/27991f91-5516-4c5e-ae7b-c986274dfcef)
+
+![image](https://github.com/user-attachments/assets/b871f90d-f073-4234-ab73-23f08649082d)
 
 
 
