@@ -28,14 +28,15 @@ DOCUMENTATION OF MY LITA PROJECT 2
 
 ### Project Overview
 ---
-This project analyses customer data from different customers in different region. The aim is to give review of the type of subscription that was activated by the customers and the period the subscription was active and cancelled for. To identify the trends, sales overview, top-performing products, and regional breakdowns.
+This project analyses customer data from different customers in different region. The aim is to give review of the type of subscription that was activated by the customers and the period the subscription was active and cancelled for. To identify the Activation and cancellation trends and regional breakdowns.
 
 ### Data Collected
 The datase includes the following:
  1. Region : The geographical area where the subscription was done
  2. Subscription Type : This kind of subscription that was activated
- 3. 
- 6. Customer ID/Name : A unique codes/Name assigned to an individual customer
+ 3. Subscription Start : The beginning of the subscription
+ 4. Subscription End : When the subscription finish
+ 6. Cancelled : Deactivation of the subscrition
  8. Total Revenue : The total revenue of the subcription that was done within a period of time
 
 ### Project Objectives
